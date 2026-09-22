@@ -61,10 +61,8 @@ Python 3.8 or later is recommended.
 Open a terminal and run:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/Hospital-Management-System.git
+git clone https://github.com/luckyydv043/Hospital-Management-System.git
 ```
-
-Replace `YOUR-USERNAME` with your GitHub username.
 
 ### Step 2: Enter the project directory
 
@@ -129,8 +127,6 @@ hospital.json
 If the JSON file does not exist, the application automatically creates the required data structure when it starts.
 
 ## Running the Project
-
-Run the following command from the project directory:
 
 Windows:
 
