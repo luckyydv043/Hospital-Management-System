@@ -1,220 +1,246 @@
-# Hospital-Management-System
-A Python CLI-based Hospital Management System using JSON for managing patients, doctors, appointments, medicines, rooms, and billing.
-A command-line based Hospital Management System developed using Python. The project uses JSON for data storage and provides basic management features for patients, doctors, appointments, medicines, rooms, and bills.
+# 🏥 Hospital Management System
 
-## Features
+A **Python-based Hospital Management System** designed to manage essential hospital operations such as patients, doctors, appointments, medicines, rooms, and billing.
 
-* Add and view patients
-* Search patients by ID
-* Delete patients
-* Add and view doctors
-* Book and view appointments
-* Add and view medicines
-* Add and view hospital rooms
-* Assign rooms to patients
-* Discharge patients from rooms
-* Generate and view bills
-* Persistent data storage using JSON
-* Command-line interface
+This project is developed as a modular Python application using **3 functional modules and a main program**.
 
-## Technologies Used
+---
 
-* Python 3
-* JSON
-* Python `json` module
-* Python `datetime` module
+## 📌 Features
 
-## Project Structure
+### 👨‍⚕️ Patient & Doctor Management
+
+* Add new patients
+* View patient details
+* Update patient information
+* Delete patient records
+* Add doctor details
+* View doctor details
+* Manage doctor information
+
+### 📅 Appointment & Medicine Management
+
+* Schedule appointments
+* View appointments
+* Update appointment details
+* Cancel appointments
+* Add medicine records
+* View medicine information
+* Manage medicine details
+
+### 🛏️ Room & Billing Management
+
+* Manage hospital rooms
+* Check room availability
+* Allocate rooms
+* Release rooms
+* Generate bills
+* View billing information
+
+---
+
+## 🗂️ Project Structure
 
 ```text
 Hospital-Management-System/
 │
-├── hospital_management.py
+├── main.py
+├── patient_doctor.py
+├── appointment_medicine.py
+├── room_billing.py
+│
 ├── hospital.json
 ├── README.md
+├── PROJECT_REPORT.md
 ├── requirements.txt
-└── PROJECT_REPORT.md
+├── LICENSE
+└── .gitignore
 ```
 
-## Requirements
+---
 
-Before running the project, make sure Python 3 is installed on your computer.
+## 🧩 Modules
 
-Check your Python installation:
+### 1. `patient_doctor.py`
 
-```bash
-python --version
-```
+This module handles:
 
-or, on some systems:
+* Patient records
+* Doctor records
+* Adding patients and doctors
+* Viewing records
+* Updating records
+* Deleting records
 
-```bash
-python3 --version
-```
+### 2. `appointment_medicine.py`
 
-Python 3.8 or later is recommended.
+This module handles:
 
-## Installation
+* Appointment scheduling
+* Appointment records
+* Medicine records
+* Adding and viewing medicines
+* Updating and managing appointments
 
-### Step 1: Clone the repository
+### 3. `room_billing.py`
 
-Open a terminal and run:
+This module handles:
 
-```bash
-git clone https://github.com/luckyydv043/Hospital-Management-System.git
-```
+* Room management
+* Room allocation
+* Room availability
+* Billing
+* Bill generation and records
 
-### Step 2: Enter the project directory
+### 4. `main.py`
 
-```bash
-cd Hospital-Management-System
-```
+`main.py` acts as the **main entry point** of the application.
 
-### Step 3: Create a virtual environment
+It:
 
-Windows:
+* Imports the three modules
+* Displays the main menu
+* Allows the user to select different hospital operations
+* Connects all modules together
 
-```bash
-python -m venv venv
-```
+---
 
-Linux/macOS:
+## 💾 Data Storage
 
-```bash
-python3 -m venv venv
-```
-
-### Step 4: Activate the virtual environment
-
-Windows Command Prompt:
-
-```bash
-venv\Scripts\activate
-```
-
-Windows PowerShell:
-
-```bash
-venv\Scripts\Activate.ps1
-```
-
-Linux/macOS:
-
-```bash
-source venv/bin/activate
-```
-
-### Step 5: Install dependencies
-
-This project uses only Python standard-library modules, so no external packages are required.
-
-You can run:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Configuration
-
-No additional configuration or API keys are required.
-
-The project stores its data in:
+The project uses a JSON file for storing hospital data.
 
 ```text
 hospital.json
 ```
 
-If the JSON file does not exist, the application automatically creates the required data structure when it starts.
+JSON provides a simple and readable way to store:
 
-## Running the Project
+* Patient data
+* Doctor data
+* Appointment data
+* Medicine data
+* Room data
+* Billing data
 
-Windows:
+---
 
-```bash
-python hospital_management.py
-```
+## 🛠️ Technologies Used
 
-Linux/macOS:
+* **Python 3**
+* **JSON**
+* **Git**
+* **GitHub**
+* **VS Code**
 
-```bash
-python3 hospital_management.py
-```
+### Python Concepts Used
 
-The application will open a command-line menu.
+* Variables
+* Data types
+* Lists
+* Dictionaries
+* Functions
+* Conditional statements
+* Loops
+* Modules
+* File handling
+* JSON
+* Exception handling
 
-## Usage
+---
 
-After starting the program, select an option from the menu.
+## ▶️ How to Run
 
-For example:
-
-```text
-1. Add Patient
-2. View Patients
-3. Search Patient
-4. Delete Patient
-...
-```
-
-Enter the corresponding number and follow the instructions displayed in the terminal.
-
-## Data Storage
-
-All application data is stored locally in `hospital.json`.
-
-The JSON file contains separate sections for:
-
-* Patients
-* Doctors
-* Appointments
-* Medicines
-* Rooms
-* Bills
-
-The application loads the existing data when it starts and saves changes whenever records are added, modified, or deleted.
-
-## Example Workflow
-
-A typical workflow can be:
-
-1. Add a doctor.
-2. Add a patient.
-3. Book an appointment between the patient and doctor.
-4. Add medicines to the system.
-5. Add hospital rooms.
-6. Assign an available room to a patient.
-7. Generate a bill.
-8. View the stored records.
-
-## Troubleshooting
-
-### Python command not found
-
-If `python` is not recognized, make sure Python is installed and added to your system PATH.
-
-Try:
+### Step 1: Clone the Repository
 
 ```bash
-python3 --version
+git clone https://github.com/luckyydv043/Hospital-Management-System.git
 ```
 
-### JSON file error
+### Step 2: Open the Project
 
-Make sure `hospital.json` contains valid JSON data. If the file is corrupted, restore it to a valid JSON structure or remove it and restart the application.
+```bash
+cd Hospital-Management-System
+```
 
-## Future Improvements
+### Step 3: Run the Program
 
-Possible future improvements include:
+```bash
+python main.py
+```
 
-* User authentication
-* Improved input validation
-* Appointment conflict checking
-* Automatic bill calculation
-* Medicine stock updates
-* More detailed reports
-* Exporting records
-* Improved command-line interface
+If your system uses `python3`, use:
 
-## Author
+```bash
+python3 main.py
+```
 
-Developed as a Python project for learning and demonstrating file handling, JSON, functions, lists, dictionaries, loops, conditions, and command-line programming.
+---
+
+## 🧪 Testing
+
+After cloning the project, run:
+
+```bash
+python main.py
+```
+
+Test the major functions:
+
+1. Add a patient
+2. View patient records
+3. Add a doctor
+4. View doctor records
+5. Create an appointment
+6. Add/view medicines
+7. Manage rooms
+8. Generate a bill
+9. Exit the program
+
+Verify that the information is correctly stored and retrieved from `hospital.json`.
+
+---
+
+## 🎯 Project Objectives
+
+The main objectives of this project are:
+
+* To develop a simple hospital management application.
+* To practice Python programming concepts.
+* To understand modular programming.
+* To implement file handling and JSON data storage.
+* To organize a Python project using multiple modules.
+* To learn Git and GitHub version control.
+* To create a practical real-world application.
+
+---
+
+## 🚀 Future Improvements
+
+The project can be extended with:
+
+* Login and authentication
+* Admin and staff roles
+* Database integration using MySQL or SQLite
+* Graphical User Interface (GUI)
+* Web-based interface
+* Online appointment booking
+* Patient search functionality
+* Automated billing
+* Medical history management
+* Doctor availability tracking
+* Report generation
+
+---
+
+## 👨‍💻 Author
+
+**Student Project — VIT Bhopal**
+
+Developed using Python as part of a programming/project assignment.
+
+---
+
+## 📄 License
+
+This project is created for **educational purposes**.
+
