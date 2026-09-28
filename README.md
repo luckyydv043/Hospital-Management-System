@@ -13,7 +13,6 @@ This project is developed as a modular Python application using **3 functional m
 * Add new patients
 * View patient details
 * Update patient information
-* Delete patient records
 * Add doctor details
 * View doctor details
 * Manage doctor information
@@ -70,7 +69,6 @@ This module handles:
 * Adding patients and doctors
 * Viewing records
 * Updating records
-* Deleting records
 
 ### 2. `appointment_medicine.py`
 
@@ -132,49 +130,35 @@ JSON provides a simple and readable way to store:
 * **GitHub**
 * **VS Code**
 
-### Python Concepts Used
-
-* Variables
-* Data types
-* Lists
-* Dictionaries
-* Functions
-* Conditional statements
-* Loops
-* Modules
-* File handling
-* JSON
-* Exception handling
-
----
-
 ## ▶️ How to Run
+Follow these steps to install and run the Hospital Management System.
 
-### Step 1: Clone the Repository
+### Step 1: Install Git
+
+If Git is not already installed on your computer, download and install Git 
+
+After installation, open Command Prompt or Terminal and check:
+
+```bash
+git --version
+
+### Step 2: Clone the Repository
 
 ```bash
 git clone https://github.com/luckyydv043/Hospital-Management-System.git
 ```
 
-### Step 2: Open the Project
+### Step 3: Open the Project
 
 ```bash
 cd Hospital-Management-System
 ```
 
-### Step 3: Run the Program
+### Step 4: Run the Program
 
 ```bash
 python main.py
 ```
-
-If your system uses `python3`, use:
-
-```bash
-python3 main.py
-```
-
----
 
 ## 🧪 Testing
 
@@ -234,7 +218,7 @@ The project can be extended with:
 
 ## 👨‍💻 Author
 
-**Student Project — VIT Bhopal**
+**Lucky**
 
 Developed using Python as part of a programming/project assignment.
 
@@ -243,4 +227,3 @@ Developed using Python as part of a programming/project assignment.
 ## 📄 License
 
 This project is created for **educational purposes**.
-
